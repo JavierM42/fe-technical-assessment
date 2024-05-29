@@ -1,4 +1,5 @@
 import { MouseEventHandler } from "react";
+import PlusIcon from "../assets/icons/plus.svg?react";
 
 type Props = {
   onClick?: MouseEventHandler;
@@ -10,7 +11,8 @@ const NewButton = ({ onClick }: Props) => {
       className="flex items-center justify-center gap-1.5 w-full py-1.5 pl-3 pr-2.5 text-[13px] font-semibold shadow-xs border border-[#09090b] border-opacity-[8%] rounded-md hover:bg-slate-100 transition-colors"
       onClick={onClick}
     >
-      New +{/* TODO inline import plus.svg */}
+      New
+      <PlusIcon className="size-3" />
     </button>
   );
 };

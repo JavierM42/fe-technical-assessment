@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import PlusIcon from "../assets/icons/plus.svg?react";
 import { Tag } from "../hooks/useFetchWorkflows";
 
 type Props = {
@@ -28,7 +29,7 @@ const WorkflowTags = ({ tags }: Props) => {
         </>
       ) : (
         <>
-          +{/* TODO SVG icon */}
+          <PlusIcon className="size-3" />
           Add Tag
         </>
       )}

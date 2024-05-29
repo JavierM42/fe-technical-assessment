@@ -1,11 +1,14 @@
+import BarChartIcon from "../assets/icons/bar-chart.svg?react";
+import CogIcon from "../assets/icons/cog.svg?react";
+import DatabaseIcon from "../assets/icons/database.svg?react";
 import NewButton from "./NewButton";
 import SidebarMenuItem, { SidebarMenuItemProps } from "./SidebarMenuItem";
 import SiteHeader from "./SiteHeader";
 
 const MENU_ITEMS: SidebarMenuItemProps[] = [
-  { icon: "database", name: "Data Name" },
-  { icon: "barchart", name: "Monitoring" },
-  { icon: "cog", name: "Settings" },
+  { icon: DatabaseIcon, name: "Data Name" },
+  { icon: BarChartIcon, name: "Monitoring" },
+  { icon: CogIcon, name: "Settings" },
 ];
 
 const Sidebar = () => {

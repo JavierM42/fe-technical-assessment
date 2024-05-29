@@ -1,3 +1,5 @@
+import PencilIcon from "../assets/icons/pencil.svg?react";
+import TrashCanIcon from "../assets/icons/trash-can.svg?react";
 import { Workflow } from "../hooks/useFetchWorkflows";
 import WorkflowTags from "./WorkflowTags";
 
@@ -16,13 +18,18 @@ const WorkflowListItem = ({ name, type, tags }: Props) => {
         <WorkflowTags tags={tags} />
       </td>
       <td className="px-2 py-4 border-y border-[#09090b] border-opacity-[8%]">
-        <div className="flex gap-1">
-          <button className="p-1 bg-[#09090b] bg-opacity-[4%] rounded-md">
-            Edit
+        <div className="flex gap-2">
+          <button
+            className="size-6 p-1 bg-[#09090b] bg-opacity-[4%] rounded-md"
+            aria-label="Edit"
+          >
+            <PencilIcon />
           </button>
-          <button className="p-1 bg-[#09090b] bg-opacity-[4%] rounded-md">
-            Delete
-            {/* TODO icons */}
+          <button
+            className="size-6 p-1 bg-[#09090b] bg-opacity-[4%] rounded-md"
+            aria-label="Delete"
+          >
+            <TrashCanIcon />
           </button>
         </div>
       </td>
@@ -31,3 +38,5 @@ const WorkflowListItem = ({ name, type, tags }: Props) => {
 };
 
 export default WorkflowListItem;
+
+// Edit and delete buttons should have a tooltip.
