@@ -1,20 +1,13 @@
 import AirOps from "@airops/airops-js";
 import { ExecuteResponse } from "@airops/airops-js/dist/ts/types";
 import { useEffect, useRef, useState } from "react";
+import { Workflow } from "../types/workflow";
 
 const userId = import.meta.env.VITE_USER_ID;
 const workspaceId = import.meta.env.VITE_WORKSPACE_ID;
 const hashedUserId = import.meta.env.VITE_HASHED_USER_ID;
 
 const airopsInstance = AirOps.identify({ userId, workspaceId, hashedUserId });
-
-export type Tag = { name: string; color: string };
-
-export type Workflow = {
-  type: "workflow" | "agent";
-  name: string;
-  tags: Tag[];
-};
 
 const useFetchWorkflows = () => {
   const [workflows, setWorkflows] = useState<Workflow[] | undefined>(undefined);

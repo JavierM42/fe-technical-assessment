@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 type Props = {
-  icon: (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
+  icon: (props: React.SVGProps<SVGSVGElement>) => ReactNode;
   name: string;
 };
 

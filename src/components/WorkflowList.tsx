@@ -1,4 +1,4 @@
-import { Workflow } from "../hooks/useFetchWorkflows";
+import { Workflow } from "../types/workflow";
 import WorkflowListItem from "./WorkflowListItem";
 
 type Props = { workflows: Workflow[] };

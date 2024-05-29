@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import PlusIcon from "../assets/icons/plus.svg?react";
-import { Tag } from "../hooks/useFetchWorkflows";
+import { Tag } from "../types/workflow";
 
 type Props = {
   tags: Tag[];

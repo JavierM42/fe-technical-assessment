@@ -13,7 +13,7 @@ const MENU_ITEMS: SidebarMenuItemProps[] = [
 
 const Sidebar = () => {
   return (
-    <div className="min-h-screen border-r border-[#e6e6e6] py-2.5 w-60 flex flex-col gap-2">
+    <div className="h-screen border-r border-[#e6e6e6] py-2.5 w-60 flex flex-col gap-2">
       <div className="px-2 space-y-2">
         <SiteHeader />
         <NewButton />

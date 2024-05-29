@@ -1,6 +1,6 @@
 import PencilIcon from "../assets/icons/pencil.svg?react";
 import TrashCanIcon from "../assets/icons/trash-can.svg?react";
-import { Workflow } from "../hooks/useFetchWorkflows";
+import { Workflow } from "../types/workflow";
 import WorkflowTags from "./WorkflowTags";
 
 type Props = Workflow;
