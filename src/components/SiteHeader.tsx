@@ -8,5 +8,3 @@ const SiteHeader = () => {
 };
 
 export default SiteHeader;
-
-// Assuming 16px over 17px for horizontal spacing relative to sidebar.

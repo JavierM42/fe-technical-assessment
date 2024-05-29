@@ -18,8 +18,8 @@ const PageHeader = ({ title, rightContent }: Props) => {
 export default PageHeader;
 
 /*
-  I think it's kind of an uncommon pattern, but I like to set up these type of
-  elements so they decide how to position their right content items.
-  It's usual for it to be a list of buttons or inputs, and I'd rather not have
+  I think it's kind of an uncommon pattern, but I like to set up these types of
+  elements so _they_ decide how to position their right content items.
+  It's usual for those to be a list of buttons or inputs, and I'd rather not have
   to worry about whether the gap was 8px or 10px every time we use it.
 */

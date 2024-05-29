@@ -20,4 +20,5 @@ const NewButton = ({ onClick }: Props) => {
 export default NewButton;
 
 // I came up with a simple hover state so the button feels like one.
-// onClick is of course unused but it's the minimal set of props the actual non-placeholder button would have
+// onClick is of course unused but it's the minimal set of props the actual
+// non-placeholder button would have.

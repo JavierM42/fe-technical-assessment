@@ -40,3 +40,5 @@ const WorkflowTags = ({ tags }: Props) => {
 export default WorkflowTags;
 
 // There should be a tooltip when there are two or more tags.
+
+// Add Tag should be a button

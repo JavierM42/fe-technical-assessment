@@ -13,6 +13,7 @@ const useFetchWorkflows = () => {
   const [workflows, setWorkflows] = useState<Workflow[] | undefined>(undefined);
 
   const airopsResponseRef = useRef<ExecuteResponse>();
+
   useEffect(() => {
     const fetchWorkflows = async () => {
       airopsResponseRef.current = await airopsInstance.apps.execute({
@@ -38,9 +39,7 @@ const useFetchWorkflows = () => {
 
 export default useFetchWorkflows;
 
-// the typecast to Worfklow[] is not safe, in a production environment I'd use Zod to check
-// that the types returned from the LLM are what I asked for
+// the typecast to Worfklow[] is not safe, in a production environment I'd use the Zod
+// library to check that the types returned from the LLM are what I asked for
 
 // Handling API errors is also necessary.
-
-// React dev mode will fire useEffect twice, resulting in a flicker of different results

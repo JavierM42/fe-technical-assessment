@@ -33,6 +33,6 @@ export default SearchInput;
 // Assuming search happens on type, I've added a debounce to prevent spamming queries.
 // useDebounceCallback imported instead of implemented, no need to reinvent the wheel.
 
-// This was just the fastest way to position the search icon, there are other options I like more.
+// This was just the fastest way to position the search icon, there are nicer options in my opinion.
 
 // Input has no label which is an accessibility issue.

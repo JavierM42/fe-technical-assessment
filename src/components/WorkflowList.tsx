@@ -30,5 +30,5 @@ export default WorkflowList;
 
 // My preferred way to implement tables is through a list that looks like one
 // (hence the name), but I had to cut scope. List-based tables, styled with CSS
-// grid or flex, are easier to transform into responsive cards, while also
+// grid or flexbox, are easier to transform into responsive cards, while also
 // avoiding table styling complexity.
