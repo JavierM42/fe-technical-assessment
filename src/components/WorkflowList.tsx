@@ -11,6 +11,7 @@ const WorkflowList = ({ workflows }: Props) => {
           <th className="px-2 py-4 text-sm text-left">Type</th>
           <th className="px-2 py-4 text-sm text-left">Name</th>
           <th className="px-2 py-4 text-sm text-left">Tags</th>
+          <th className="px-2 py-4 text-sm text-left">Last Updated</th>
           <th className="px-2 py-4 text-sm text-left">Actions</th>
         </tr>
       </thead>

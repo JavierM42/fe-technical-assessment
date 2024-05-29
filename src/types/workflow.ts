@@ -4,4 +4,5 @@ export type Workflow = {
   type: "workflow" | "agent";
   name: string;
   tags: Tag[];
+  lastUpdated: string;
 };

@@ -18,7 +18,7 @@ const useFetchWorkflows = () => {
     const fetchWorkflows = async () => {
       airopsResponseRef.current = await airopsInstance.apps.execute({
         appId: "40946026-4683-45c0-bcb6-b773b9caba70",
-        version: 3,
+        version: 4,
         payload: { inputs: {} },
       });
 
